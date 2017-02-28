@@ -1,0 +1,22 @@
+# SciTE session file
+
+buffer.1.path=D:\RM\git-tech-talk\piping.gtt
+buffer.1.position=397
+buffer.1.scroll=13
+
+buffer.2.path=D:\RM\git-tech-talk\reflog.gtt
+buffer.2.position=10
+buffer.2.scroll=0
+
+buffer.3.path=D:\RM\git-tech-talk\advanced aliases.gtt
+buffer.3.position=24
+buffer.3.scroll=0
+
+buffer.4.path=D:\RM\git-tech-talk\bisect.gtt
+buffer.4.position=12
+buffer.4.scroll=0
+
+buffer.5.path=D:\RM\git-tech-talk\shortlog.gtt
+buffer.5.position=18
+buffer.5.scroll=0
+buffer.5.current=1

@@ -2,6 +2,9 @@
 # alias hidden: show hidden files
 $ git ls-files -v | grep '^h' | awk '{print $2}'
 
+# open files with BitSet in name
+$ git ls-files *BitSet* | xargs o
+
 # delete merged branches except few
 $ git b --merged 
     | egrep -v "(\*|master|pu|maint|next)"
@@ -14,9 +17,6 @@ $ git b --sort=committerdate
     | egrep "cr/"
     | head -3
     | xargs git b -d
-
-# open files with BitSet in name
-$ git ls-files *BitSet* | xargs o
 
 # open files with space in them
 $ git ls-files *sproc* 
