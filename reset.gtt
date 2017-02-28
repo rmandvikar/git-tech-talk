@@ -1,0 +1,35 @@
+## reset
+
+
+#                  topic
+#   ---o---A-------B
+#                  working dir
+                   
+$ git reset --hard head~
+
+#          topic
+#   ---o---A-------B
+#          working dir
+
+# B is unstaged
+$ git reset head~
+
+#          topic
+#   ---o---A-------B (unstaged)
+#                  working dir
+
+# B is staged
+$ git reset --soft head~
+
+#          topic
+#   ---o---A-------B (staged)
+#                  working dir
+
+
+#        move      change     working 
+#        branch    index      dir     
+#  soft     Y                         
+# mixed     Y        Y                
+#  hard     Y        Y         Y      
+
+

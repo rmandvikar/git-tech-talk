@@ -1,0 +1,30 @@
+# SciTE session file
+
+buffer.1.path=D:\RM\git-tech-talk\diff.gtt
+buffer.1.position=104
+buffer.1.scroll=0
+
+buffer.2.path=D:\RM\git-tech-talk\commit ranges.gtt
+buffer.2.position=611
+buffer.2.scroll=8
+
+buffer.3.path=D:\RM\git-tech-talk\amend.gtt
+buffer.3.position=125
+buffer.3.scroll=0
+
+buffer.4.path=D:\RM\git-tech-talk\stash.gtt
+buffer.4.position=360
+buffer.4.scroll=0
+
+buffer.5.path=D:\RM\git-tech-talk\54-.gtt
+buffer.5.position=52
+buffer.5.scroll=0
+
+buffer.6.path=D:\RM\git-tech-talk\branch.gtt
+buffer.6.position=237
+buffer.6.scroll=0
+
+buffer.7.path=D:\RM\git-tech-talk\checkout + clean.gtt
+buffer.7.position=105
+buffer.7.scroll=0
+buffer.7.current=1

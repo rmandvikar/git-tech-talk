@@ -1,0 +1,27 @@
+## upstream
+
+
+#           upstream
+#           
+#                 --o---B origin/master
+#                /
+#               /
+#   ---o---o---A origin/master
+#                master
+#           
+#           downstream
+
+$ git fetch
+
+#           upstream
+#
+#                         origin/master
+#
+#   ---o---o---A----o---B origin/master
+#              master
+#           
+#           downstream
+
+(master)
+$ git reset --hard master@{u}
+                   origin/master

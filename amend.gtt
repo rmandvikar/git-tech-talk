@@ -1,0 +1,14 @@
+## commit --amend
+
+
+$ git commit
+
+#              topic
+#   ---o<--o<--A
+#
+
+$ git commit --amend
+
+#   ---o<--o<--A
+#           \
+#            A' topic

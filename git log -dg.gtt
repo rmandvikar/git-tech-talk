@@ -1,0 +1,10 @@
+git log --gargantuan --daunting
+
+
+# 100+ options
+
+git log -dg
+        -gd
+        -d -g
+        -g -d
+

@@ -1,0 +1,16 @@
+## checkout/clean
+
+
+# undo all unstaged changes
+$ git checkout .
+
+# undo a file's unstaged changes
+$ git checkout file.txt
+
+# undo untracked files, dirs, build files
+$ git clean -f [-d] [-x]
+
+
+# alias: git undo
+$ git reset --hard && git clean -f
+$ git checkout . && git clean -f

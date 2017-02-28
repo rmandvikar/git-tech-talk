@@ -1,0 +1,17 @@
+## why rebase?
+
+
+#                      master
+#   ---o---o---o---o---x
+#       \       \     /
+#        A---B---x---C topic
+
+(topic)
+$ git commit
+$ git commit
+$ git merge master
+$ git commit
+(master)
+$ git merge topic
+$ git push
+

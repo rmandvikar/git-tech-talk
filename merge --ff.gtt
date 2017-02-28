@@ -1,0 +1,19 @@
+## --ff (fast-forward) merge
+
+
+#   ---o master
+#       \
+#        --o---o
+#              dev
+#   
+
+(master)
+$ git merge dev
+
+#   ---o 
+#       \      master
+#        --o---o
+#              dev
+#
+
+# Where was master previously?

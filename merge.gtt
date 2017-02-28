@@ -1,0 +1,15 @@
+## merge
+
+
+#   ---o---o master
+#       \    
+#        --o
+#          dev
+
+(master)
+$ git merge dev
+
+#   ---o---o---x master
+#       \     /
+#        --o--
+#          dev

@@ -1,0 +1,35 @@
+## commit ranges
+
+
+# ^     1st parent (same as ^1)
+# ~     1st parent (same as ~1)
+# ^2    2nd parent
+# ~2    grandparent (1st parent's 1st parent)
+# ^     parent by breadth
+# ~     parent by depth
+
+# ^!
+$ git diff 4a5b6c7^!
+$ git diff 4a5b6c7~ 4a5b6c7 # does not work for merges
+
+# .. in e, but not in d
+$ git log d..e
+
+# ... in d or in e but not both
+$ git log d...e
+
+# ... in a or b or both
+$ git log d e
+
+    a---b---c---d
+             \
+              --e
+
+# d..e    e
+# e..d    d
+# d...e   d e
+# d e     a b c d e
+
+# what's new on origin/master
+$ git log ..origin/master
+

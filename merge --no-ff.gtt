@@ -1,0 +1,23 @@
+## --no-ff merge
+
+
+#   ---o master
+#       \
+#        --o---o
+#              dev
+
+(master)
+$ git merge dev --no-ff
+
+#   ---o---------x master
+#       \       /
+#        --o---o
+#              dev
+
+
+# .gitconfig
+[merge]
+    ff = false
+
+# for ff merge
+$ git merge dev --ff

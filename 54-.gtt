@@ -1,0 +1,8 @@
+## commit message
+
+
+#   subject is 54 chars only
+#
+#   body is freeform.
+
+$ git log --oneline

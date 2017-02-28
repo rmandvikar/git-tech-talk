@@ -1,0 +1,40 @@
+## rebase --onto
+
+
+#              master
+#   ---o---o---o
+#       \       \        origin/topic
+#        \       A'---B' topic
+#         \              
+#          A---B topic{-1}
+#               \
+#                X---Y feature
+
+(topic)
+$ git merge feature
+conflicts or ugly history
+
+(feature)
+$ git rebase topic
+
+#              master
+#   ---o---o---o
+#       \       \        origin/topic
+#        \       A'---B' topic
+#         \            \  
+#          A---B        A''---B''
+#               \              \
+#                X---Y          X'---Y' feature
+
+(feature)
+$ git rebase --onto topic B Y
+
+#              master
+#   ---o---o---o
+#       \       \        origin/topic
+#        \       A'---B' topic
+#         \            \  
+#          A---B        X'---Y' feature
+#               \     
+#                X---Y
+

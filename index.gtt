@@ -1,0 +1,21 @@
+## index
+
+
+# commit in flight
+# break a change into logical commits
+# exclude a whole file or a *part* of it
+
+# show not added to index
+git dt
+
+# show added to index
+git dt --staged|--cached
+
+# show both, not added and added to index
+git dt head
+
+#
+#  HEAD|          git diff head         |
+#   ---o-------------------s------------u
+#      | git diff --staged |  git diff  |
+#

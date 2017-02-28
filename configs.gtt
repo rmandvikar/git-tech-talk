@@ -1,0 +1,16 @@
+## configs
+
+
+# local
+# global
+# system
+
+# edit
+$ git config --local -e &
+$ git config --global -e &
+
+# global config
+# editor
+# winmerge
+# set some options in configs
+# include path

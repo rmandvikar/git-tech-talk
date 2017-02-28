@@ -1,0 +1,11 @@
+## bisect
+
+
+$ git bisect start
+$ git bisect good
+$ git bisect bad <commit>
+$ ...
+$ git bisect good|bad
+$ ...
+$ git bisect reset
+

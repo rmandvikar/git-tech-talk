@@ -1,0 +1,26 @@
+special refs: (ex: head)
+    commit
+
+branch:
+    commit
+
+commit:
+    hash
+    message
+    authordate
+    author
+    committerdate
+    committer
+    parent|parents
+    tree
+
+tree:
+    hash
+    path
+    tree[]
+    blob[]
+    blobpath[]
+
+blob:
+    hash
+    binary

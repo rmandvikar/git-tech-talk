@@ -1,0 +1,35 @@
+## rebase -i
+
+
+#              master
+#   ---o---o---o
+#               \     
+#                A---B topic
+
+$ git rebase -i master|head~2
+
+#              master
+#   ---o---o---o
+#              |\     
+#              | A---B
+#               \
+#                A'--B' topic
+
+pick 87dce5f A
+pick 83dfe9a B
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+# d, drop = remove commit
+
+edit 87dce5f A
+pick 83dfe9a B
+
+stopped at 87dce5f... A
+$ git add .
+$ git rebase --continue
+

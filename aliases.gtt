@@ -1,0 +1,28 @@
+## aliases
+
+
+# The freedom to make my own aliases
+#   is all I ever wanted.
+#              - Mance Rayder. 
+
+# git status
+$ git s
+
+# git commit
+$ git c
+
+# git checkout
+$ git co
+
+# log aliases
+# git log --pretty=twoline --graph \
+#   --decorate --abbrev-commit --date=relative
+$ git l -1
+
+$ git alias alias
+$ git conf alias
+
+# alias with ! run at root level
+$ cd to/some/dir
+$ git l .
+

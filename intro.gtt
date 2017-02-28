@@ -1,0 +1,20 @@
+git --learning --curve
+
+
+#   difficulty
+#   
+#               ----  nirvana
+#              /    \
+#             /      \
+#            /        ------ 
+#           | conflicts!?#  \
+#           | rebase!#       \
+#          /                  \
+#         ? reset?!            -------
+#        / undo?
+#       / reset?!
+#       | index?
+#       | dag?
+#   ----
+#   
+#               time

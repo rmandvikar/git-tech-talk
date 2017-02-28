@@ -1,0 +1,22 @@
+## diff
+
+
+# head / working dir
+$ git diff
+$ git difftool
+
+# commit / working dir
+$ git d master
+
+# commit1 / commit2
+$ git d master dev
+
+# commit1 / commit2 for file.txt
+$ git dt master dev dir/file.txt
+$ git dt master dev -- "dir/file.txt"
+
+# commit1:file1 / commit2:file2
+$ git dt dev:README.md master:rm.Extensions/Heap.cs
+
+# char level diff
+$ git dw

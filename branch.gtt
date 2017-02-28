@@ -1,0 +1,14 @@
+## branch
+
+
+# what branches is my merged into?
+$ git fetch
+$ git b -r --contains origin/branch
+
+# tracking branch info
+$ git b -v  # verbose
+$ git b -vv # extra verbose
+
+# force move a branch
+$ git b -f <branch> <commit>
+

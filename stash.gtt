@@ -1,0 +1,25 @@
+## stash
+
+
+# -u includes untracked files
+$ git stash save -u "comment"
+
+# pop will remove if no conflicts, apply does not
+$ git stash apply|pop
+
+# v2.11+, no need to type stash@{1}
+$ git stash apply|pop 1
+
+#     WIP: stashed commit
+#      *-.   
+#      |\ \  
+#      | | |
+#      | | * untracked files
+#      | |
+#      | |
+#      | * index
+#      |/
+#      x $ git stash save -u
+
+# use --index to restore index
+git stash apply 3 --index

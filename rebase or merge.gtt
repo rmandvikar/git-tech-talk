@@ -1,0 +1,19 @@
+## rebase or merge?
+
+
+#              master
+#   ---o---o---o
+#      |\       
+#      | o hotfix
+#      |
+#       `--o topic
+#
+
+(topic)
+$ git rebase hotfix
+$ git rebase master
+
+# if +2ed, then cannot rebase
+(topic)
+$ git merge hotfix
+$ git merge master
