@@ -3,38 +3,22 @@
 
 #              master
 #   ---o---o---o
-#       \       \        origin/topic
-#        \       A'---B' topic
+#       \    
+#        \   
 #         \              
-#          A---B topic{-1}
+#          A---B---C topic
 #               \
 #                X---Y feature
 
-(topic)
-$ git merge feature
-conflicts or ugly history
-
 (feature)
-$ git rebase topic
+$ git rebase --onto master topic feature
+# X, Y are rebased
 
 #              master
 #   ---o---o---o
-#       \       \        origin/topic
-#        \       A'---B' topic
-#         \            \  
-#          A---B        A''---B''
-#               \              \
-#                X---Y          X'---Y' feature
-
-(feature)
-$ git rebase --onto topic B Y
-
-#              master
-#   ---o---o---o
-#       \       \        origin/topic
-#        \       A'---B' topic
-#         \            \  
-#          A---B        X'---Y' feature
+#       \       \ 
+#        \       X'---Y' feature
+#         \           
+#          A---B---C topic     
 #               \     
-#                X---Y
-
+#                X---Y feature{-1}

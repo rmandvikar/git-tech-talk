@@ -13,3 +13,14 @@ $ git merge dev
 #       \     /
 #        --o--
 #          dev
+
+(master)
+$ git merge pu maint
+
+#   ---o---o---x master
+#      |\     /|
+#      | --o-- | pu
+#       \      /
+#        `-o--' maint
+
+# Linux kernel has 12 branches merged together

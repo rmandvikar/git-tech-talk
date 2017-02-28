@@ -13,5 +13,3 @@ $ git merge master
 $ git commit
 (master)
 $ git merge topic
-$ git push
-

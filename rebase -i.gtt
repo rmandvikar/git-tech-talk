@@ -33,3 +33,18 @@ stopped at 87dce5f... A
 $ git add .
 $ git rebase --continue
 
+# you can reorder commits
+edit A
+edit C
+edit B
+edit D
+
+# change to
+edit A
+fixup B
+edit C
+#edit D
+
+# results in
+commit 1 (A+B)
+commit 2 (C)

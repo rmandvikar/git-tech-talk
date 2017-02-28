@@ -1,0 +1,39 @@
+
+# alias hidden: show hidden files
+$ git ls-files -v | grep '^h' | awk '{print $2}'
+
+# delete merged branches except few
+$ git b --merged 
+    | egrep -v "(\*|master|pu|maint|next)"
+    | egrep "cr"
+    | xargs git b -d
+
+# delete top 3 cr/* branches except current
+$ git b --sort=committerdate
+    | egrep -v "\*"
+    | egrep "cr/"
+    | head -3
+    | xargs git b -d
+
+# open files with BitSet in name
+$ git ls-files *BitSet* | xargs o
+
+# open files with space in them
+$ git ls-files *sproc* 
+    | sed 's/^/"/' | sed 's/$/"/'
+    | xargs o
+
+# files with different statuses
+$ git s | grep ^UU
+$ git s | grep ^M
+$ git s | grep ^R
+
+# open conflicted files
+$ git s | grep ^UU | cut -c3- | xargs o
+
+# top 2 items
+$ ... | head -2
+# last 2 items
+$ ... | tail -2
+# 2nd line item
+$ ... | sed -n '2 p'

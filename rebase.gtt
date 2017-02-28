@@ -20,8 +20,8 @@ $ git rebase master
 #       \       \
 #        \       A'---B' topic
 #         \ 
-#          A---B
-#              origin/topic
+#          A---B origin/topic
+#              
 
 $ git push topic
 rejected   (non-fast-forward)
