@@ -13,3 +13,13 @@ fatal: multiple branches matched
 $ git coe z
 Switched to branch 'temp/lazy'
 
+# custom commands
+$ git l
+l = git log --pretty=two
+
+# pretty formats
+two
+one
+
+# aliases running as shell scripts
+l = !"git lg2"

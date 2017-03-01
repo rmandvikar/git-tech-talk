@@ -1,3 +1,11 @@
 ## shortlog
 
 
+# shortlog with summary, sort, email
+$ git shortlog -sne
+
+# .mailmap
+- consolidate name/emails
+- place at root OR 
+    outside of repo with .mailmap path in config
+

@@ -4,11 +4,11 @@
                       |
                       |
                fetch  | 
-             ------------- repo
-           ↙          |      ↑
-        user ----------------↑ submit 
-           ↘          |      ↑
-             -----------→ review
+        user <------------ repo
+                      |      ↑
+                      |      ↑ submit 
+                      |      ↑
+        user -----------> review
                push   |
                       |
                       |
