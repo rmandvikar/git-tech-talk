@@ -10,8 +10,8 @@ $ git ls-files *BitSet* | xargs o
 # delete merged branches except few
 $ git b --merged 
     | egrep -v "(\*|master|pu|maint|next)"
-    | egrep "cr"
-    | xargs git b -d
+    | egrep "cr/"
+    | xargs git branch -d
 
 # delete top 3 cr/* branches except current
 $ git b --sort=committerdate
@@ -21,7 +21,7 @@ $ git b --sort=committerdate
     | xargs git b -d
 
 # open files with space in them
-$ git ls-files *sproc* 
+$ git ls-files "<proc>"
     | sed 's/^/"/' | sed 's/$/"/'
     | xargs o
 

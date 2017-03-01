@@ -21,5 +21,7 @@ l = git log --pretty=two
 two
 one
 
-# aliases running as shell scripts
+# aliases running as shell scripts run from /
 l = !"git lg2"
+# this will still run from /
+$ cd to/some/dir && git l .
