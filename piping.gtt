@@ -1,6 +1,8 @@
+# piping
+
 
 # alias hidden: show hidden files
-$ git ls-files -v | grep '^h' | awk '{print $2}'
+$ git ls-files -v | grep '^h' | cut -c3-
 
 # open files with BitSet in name
 $ git ls-files *BitSet* | xargs o

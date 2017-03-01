@@ -1,7 +1,8 @@
-## git rev
+## git review
 
 
-git rev:
+# push to gerritt for code review
+git review:
     branch = $1 ?? currentBranch()
     if <branch> == null:
         throw "gerrit requires branch"
@@ -11,8 +12,8 @@ git rev:
 
 
 (hx/1234-topic)
-$ git rev
+$ git review
 
 (1a2b3c4d)
-$ git rev hx/1234-topic
+$ git review hx/1234-topic
 
