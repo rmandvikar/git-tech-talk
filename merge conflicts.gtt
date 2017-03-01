@@ -13,10 +13,10 @@ UU a.txt # conflict (Unmerged, Updated)
  D e.txt # deleted
 
 # get current|other branch's copy
-$ git dt --ours|--theirs a.txt
+$ git difftool --ours|--theirs a.txt
 
 # get current branch's copy
-$ git co --ours a.txt
+$ git checkout --ours a.txt
 
 # show diff of resolved conflicts for merge commit
-git dt head^! --name-status
+git difftool head^! --name-status
