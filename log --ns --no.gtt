@@ -1,2 +1,17 @@
 ## git log --name-status|--name-only
 
+
+# show file names and statuses
+$ git log -1 --name-status
+commit 714a14ef23acb056e3ad0b03c2fd515e3c308603 (HEAD -> dev, github/dev)
+...
+M   README.md
+A   rm.Extensions/BitSet.cs
+M   rm.Extensions/Properties/AssemblyInfo.cs
+M   rm.Extensions/rm.Extensions.csproj
+A   rm.ExtensionsTest/BitSetTest.cs
+M   rm.ExtensionsTest/rm.ExtensionsTest.csproj
+
+# show file names 
+$ git difftool --name-only
+

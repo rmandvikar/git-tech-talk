@@ -1,0 +1,11 @@
+## grep, log grep, ls-files
+
+
+# grep
+$ git grep "whatever"
+
+# 
+
+# open csproj files from previous commit
+$ git difftool --name-only | grep csproj | xargs o
+

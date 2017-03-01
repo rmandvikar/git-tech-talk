@@ -1,2 +1,15 @@
 ## advanced aliases
 
+
+$ git coe <partial branch>
+
+# multiple branches
+$ git coe e
+fatal: multiple branches matched
+  master
+  dev
+
+# co to branch
+$ git coe z
+Switched to branch 'temp/lazy'
+

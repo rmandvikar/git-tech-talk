@@ -1,1 +1,13 @@
 ## reflog
+
+
+# <commit> (refs) HEAD@{<i>} summary of operation
+
+# ref log
+$ git reflog -10
+
+# 87dce5f (HEAD -> dev, github/master, github/HEAD, master) HEAD@{0}: reset: moving to master
+# 0733641 HEAD@{1}: rebase -i (finish): returning to refs/heads/dev
+# 0733641 HEAD@{2}: rebase -i (pick): Adding BitSet implementation.
+
+$ git reset --hard HEAD@{1}

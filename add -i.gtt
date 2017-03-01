@@ -1,0 +1,21 @@
+## git add -i
+
+
+$ git status
+(changes)
+
+$ git add -i
+
+*** Commands ***
+  1: status       2: update       3: revert       4: add untracked
+  5: patch        6: diff         7: quit         8: help
+What now>
+
+(add/remove/patch to index)
+
+$ git commit
+
+# add, reset, checkout
+$ git add -p
+$ git reset -p
+$ git checkout -p

@@ -1,0 +1,11 @@
+## git rev
+
+
+git rev:
+    branch = $1 ?? currentBranch()
+    if branch == null:
+        throw "gerrit requires branch"
+    if !exists(origin/branch):
+        gerrit create branch master:branch
+    git push origin head:refs/for/branch
+

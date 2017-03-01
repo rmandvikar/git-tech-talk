@@ -1,0 +1,19 @@
+## gerrit
+
+
+                      |
+                      |
+               fetch  | 
+             ------------- repo
+           ↙          |      ↑
+        user ----------------↑ submit 
+           ↘          |      ↑
+             -----------→ review
+               push   |
+                      |
+                      |
+                           gerrit
+
+# no force push rights
+$ git push -f
+( ! [remote rejected])
