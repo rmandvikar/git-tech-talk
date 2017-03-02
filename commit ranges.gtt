@@ -12,6 +12,9 @@
 $ git diff 4a5b6c7^!
 $ git diff 4a5b6c7~ 4a5b6c7 # does not work for merges
 
+# what's new on origin/master
+$ git log ..origin/master
+
 # .. in e, but not in d
 $ git log d..e
 
@@ -29,7 +32,3 @@ $ git log d e
 # e..d    d
 # d...e   d e
 # d e     a b c d e
-
-# what's new on origin/master
-$ git log ..origin/master
-
