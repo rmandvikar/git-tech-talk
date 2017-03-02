@@ -1,9 +1,10 @@
 ## aliases
 
 
-# The freedom to make my own aliases
-#   is all I ever wanted.
-#              - Mance Rayder. 
+# The freedom to make my own ̶m̶i̶s̶t̶a̶k̶e̶s aliases
+# is all I ever wanted.
+#              - Mance Rayder
+#                Game of Thrones
 
 # git status
 $ git s
@@ -20,7 +21,7 @@ $ git co
 $ git l -1
 
 $ git alias alias
-$ git conf alias
+$ git alias conf
 
 # alias with ! run at root level
 $ cd to/some/dir

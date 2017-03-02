@@ -1,0 +1,10 @@
+## git log --gargantuan --intimidating --terrifying
+
+
+# 100+ options
+
+git log -git
+        -tig
+        -g -i -t
+        -g -t -i
+

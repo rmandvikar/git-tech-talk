@@ -1,7 +1,10 @@
-special refs: (ex: head)
-    commit
+## data structures
 
-branch:
+
+special refs: (ex: head, fetch_head)
+    branch
+
+branch, remote, tag:
     commit
 
 commit:
