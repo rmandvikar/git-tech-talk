@@ -1,0 +1,34 @@
+# golden rule of rebase
+
+
+# don't rebase public branches
+
+#              topic
+#   ---o---o---o
+#       \       
+#        A---B master (me, others)
+
+(master)
+$ git rebase topic
+
+#              topic
+#   ---o---o---o---A'---B' master (me)
+#       \                  
+#        A---B master (others)
+
+(master)
+$ git merge origin/master
+
+#              topic
+#   ---o---o---o---A'---B'
+#       \                \
+#        A---B------------x master (me, others)
+
+(master)
+git merge topic
+
+#              topic
+#   ---o---o---o
+#       \       \
+#        A---B---x master (me, others)
+
