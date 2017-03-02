@@ -1,11 +1,14 @@
 ## grep, log grep, ls-files
 
 
-# grep
-$ git grep "whatever"
+# greps in working directory only
+$ git grep "woohoo"
 
-# TODO
+# greps in entire repo
+git log -G "woohoo"
 
-# open csproj files from previous commit
-$ git difftool --name-only | grep csproj | xargs o
+# grep in log messages only
+git log --grep "woohoo"
 
+# open csproj files from last commit
+$ git difftool head~ --name-only | grep csproj | xargs o
