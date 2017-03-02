@@ -20,3 +20,8 @@ $ git checkout --ours a.txt
 
 # show diff of resolved conflicts for merge commit
 git difftool head^! --name-status
+
+# show diff of resolved conflicts for merge commit
+git reset --merge orig_head
+[alias]
+    undomerge = reset --merge orig_head
