@@ -21,9 +21,16 @@ $ git b --sort=committerdate
     | xargs git b -d
 
 # open files with space in them
-$ git ls-files "<proc>"
+$ git ls-files "<sproc>"
     | sed 's/^/"/' | sed 's/$/"/'
     | xargs o
+
+$ git ls-files *<sproc>* 
+    | awk '{print "\""$0"\""}' 
+    | xargs o
+
+$ git ls-files -z *<sproc>*
+    | xargs -0 o
 
 # files with different statuses
 $ git s | grep ^UU
