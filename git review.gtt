@@ -1,7 +1,7 @@
 ## git review
 
 
-# push to gerritt for code review
+# push to gerrit for code review
 git review:
     branch = $1 ?? currentBranch()
     if <branch> == null:
