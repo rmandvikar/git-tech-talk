@@ -12,7 +12,7 @@ $ git reset --hard head~
 #          working dir
 
 # B is unstaged
-$ git reset head~
+$ git reset [--mixed] head~
 
 #          topic
 #   ---o---A-------B (unstaged)
