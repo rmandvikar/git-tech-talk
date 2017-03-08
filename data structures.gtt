@@ -1,10 +1,10 @@
 ## data structures
 
 
-special refs: (ex: head, fetch_head)
+special refs: head, fetch_head
     branch
 
-branch, remote, tag:
+refs: branch, remote, tag:
     commit
 
 commit:

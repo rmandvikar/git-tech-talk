@@ -6,11 +6,11 @@
 #              - Mance Rayder
 #                Game of Thrones
 
-# git status
-$ git s
-
 # git commit
 $ git c
+
+# git status -s|--short
+$ git s
 
 # git checkout
 $ git co
