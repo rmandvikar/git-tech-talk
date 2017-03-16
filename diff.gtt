@@ -19,6 +19,8 @@ $ git difftool master dev -- "dir/file.txt"
 $ git difftool dev:README.md master:rm.Extensions/Heap.cs
 
 # see diff of previous 2 commits combined
+$ git difftool head~2 head
+# see diff of previous 2 commits combined w/ working dir
 $ git difftool head~2
 
 # char level diff

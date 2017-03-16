@@ -11,4 +11,4 @@ $ git branch -vv # extra verbose
 
 # force move a branch
 $ git branch -f <branch> <commit|branch>
-
+$ git branch -f dev origin/dev

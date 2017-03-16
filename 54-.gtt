@@ -3,6 +3,7 @@
 
 #   subject is 54 chars only
 #
-#   body is freeform.
+#   body is freeform. this can go on and on and on and on and on and on.
 
-$ git log --oneline
+$ git log --oneline -1
+8624263 (HEAD -> dev) subject is 54 chars only

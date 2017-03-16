@@ -1,19 +1,32 @@
 ## commit ranges
 
 
+# ^     parent by breadth
+# ~     parent by depth
 # ^     1st parent (same as ^1)
 # ~     1st parent (same as ~1)
 # ^2    2nd parent
 # ~2    grandparent (1st parent's 1st parent)
-# ^     parent by breadth
-# ~     parent by depth
+# ^2~   2nd parent's 1st parent
+# ^!    no parents (roughly, ^ for parent, ! for no)
 
 # ^!
 $ git diff 4a5b6c7^!
 $ git diff 4a5b6c7~ 4a5b6c7 # does not work for merges
 
 # what's new on origin/master
+(master)
 $ git log ..origin/master
+
+#               dev..master = { d }
+#
+#   a---b---c---d master
+#            \            dev...master = { d, e }
+#             --e dev
+#
+#               master..dev = { e }
+#
+#               dev master = { a, b, c, d, e }
 
 # .. in e, but not in d
 $ git log d..e
@@ -23,10 +36,6 @@ $ git log d...e
 
 # ... in a or b or both
 $ git log d e
-
-    a---b---c---d
-             \
-              --e
 
 # d..e    e
 # e..d    d
