@@ -1,0 +1,12 @@
+# merge strategies
+
+
+# take ours or theirs on conflicts
+$ git merge -X ours dev
+$ git merge -X theirs dev
+
+# eXtra option to recursive strategy
+$ git merge [-s recursive] -X ours|theirs dev
+
+# join obsolete branch but do not take any changes
+$ git merge -s ours obsolete

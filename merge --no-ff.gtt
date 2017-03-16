@@ -14,10 +14,17 @@ $ git merge dev --no-ff
 #        --o---o
 #              dev
 
-
 # .gitconfig
 [merge]
     ff = false
 
+# --no-ff flag default
+$ git merge dev
+
 # for ff merge
 $ git merge dev --ff
+
+# .gitconfig
+[branch "master"]
+	mergeoptions = --no-ff
+# same for next, dev

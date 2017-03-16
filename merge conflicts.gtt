@@ -1,6 +1,18 @@
 ## merge conflicts
 
 
+# There are 3 things certain in life.
+(death)
+$ git merge taxes
+<<<<<<< HEAD
+death
+||||||| merged common ancestors
+merge conflicts
+=======
+taxes
+>>>>>>> taxes
+
+
 (master)
 $ git merge dev
 
@@ -21,7 +33,17 @@ $ git checkout --ours a.txt
 # show diff of resolved conflicts for merge commit
 git difftool head^! --name-status
 
-# show diff of resolved conflicts for merge commit
+# undo merge, even a sucessful merge
 git reset --merge orig_head
+# use again to go back to merge commit
+
 [alias]
     undomerge = reset --merge orig_head
+$ git undomerge
+
+# How to see resolved conflicts before push?
+$ git show head
+diff --cc file.txt
+- my change
+ -other change
+++resolved change
