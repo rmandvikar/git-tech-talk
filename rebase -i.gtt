@@ -6,6 +6,7 @@
 #               \     
 #                A---B topic
 
+(topic)
 $ git rebase -i master|head~2
 
 #              master
@@ -40,11 +41,11 @@ edit B
 edit D
 
 # change to
-edit A
-fixup B
-edit C
+e A
+f B
+e C
 #edit D
 
 # results in
-commit 1 (A+B)
-commit 2 (C)
+message 1 (commits A+B)
+message 2 (commit C)

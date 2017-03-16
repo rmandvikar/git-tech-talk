@@ -4,14 +4,22 @@
 #              master
 #   ---o---o---o
 #      |\       
-#      | o hotfix
+#      | B hotfix
 #      |
-#       `--o topic
+#       `--A topic
 #
 
 (topic)
 $ git rebase hotfix
 $ git rebase master
+
+#              master
+#   ---o---o---o---B'---A' topic
+#      |\ hotfix
+#      | B---A' topic{-1}
+#      |  
+#       `--A topic{-2}
+#
 
 # if topic is submitted, then cannot rebase
 (topic)

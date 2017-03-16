@@ -8,27 +8,36 @@
 #       \       
 #        A---B master (me, others)
 
+# I rebase master
 (master)
 $ git rebase topic
+$ git push -f
 
-#              topic
+#              topic       origin/master
 #   ---o---o---o---A'---B' master (me)
 #       \                  
 #        A---B master (others)
 
+# Others merge origin/master
 (master)
 $ git merge origin/master
+$ git push
 
 #              topic
 #   ---o---o---o---A'---B'
-#       \                \
+#       \                \  origin/master
 #        A---B------------x master (me, others)
 
+# I merge master
+# Merge is better compared to rebase
 (master)
-git merge topic
+$ git merge topic
+$ git push
 
 #              topic
-#   ---o---o---o
-#       \       \
-#        A---B---x master (me, others)
+#   ---o---o---o  master (others)
+#       \       \  
+#        A---B---x master (me)
+#                  origin/master
 
+# Others can fast-forward master now
