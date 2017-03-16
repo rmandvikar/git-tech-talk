@@ -1,9 +1,22 @@
-## commit message
+## commit message convention 54/*
 
 
-#   subject is 54 chars only
-#
-#   body is freeform. this can go on and on and on and on and on and on.
+    subject is 54 chars only
+    
+    body is freeform. this can go on and on and on and on and on and on.
 
 $ git log --oneline -1
 8624263 (HEAD -> dev) subject is 54 chars only
+
+# Please do not do this:
+
+    subject is
+    54 chars only
+    
+    body is freeform. this can go on and on and on and on and on and on.
+
+# Auto-generated messages, quoted texts are ok
+
+    Merge remote-tracking branch 'origin/really-long-branch-name' into release/next
+    
+    body is freeform. this can go on and on and on and on and on and on.
