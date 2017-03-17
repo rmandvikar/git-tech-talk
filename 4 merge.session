@@ -2,7 +2,8 @@
 
 buffer.1.path=D:\RM\git-tech-talk\merge.gtt
 buffer.1.position=100
-buffer.1.scroll=5
+buffer.1.scroll=0
+buffer.1.current=1
 
 buffer.2.path=D:\RM\git-tech-talk\merge --ff.gtt
 buffer.2.position=244
@@ -14,9 +15,8 @@ buffer.3.scroll=2
 
 buffer.4.path=D:\RM\git-tech-talk\merge conflicts.gtt
 buffer.4.position=21
-buffer.4.scroll=1
+buffer.4.scroll=0
 
 buffer.5.path=D:\RM\git-tech-talk\merge strategies.gtt
 buffer.5.position=21
 buffer.5.scroll=0
-buffer.5.current=1
