@@ -1,24 +1,28 @@
 # piping
 
 
-# alias hidden: show hidden files
-$ git ls-files -v | grep '^h' | cut -c3-
+# files with different statuses
+$ git s | grep ^UU
+$ git s | grep ^M
+$ git s | grep ^R
+
+# open conflicted files
+$ git s | grep ^UU | cut -c3- | xargs o
 
 # open files with BitSet in name
 $ git ls-files *BitSet* | xargs o
 
-# delete merged branches except few
-$ git b --merged 
-    | egrep -v "(\*|master|pu|maint|next)"
-    | egrep "cr/"
-    | xargs git branch -d
+# alias hidden: show hidden files
+$ git ls-files -v | grep '^h' | cut -c3-
+$ git hidden
 
-# delete top 3 cr/* branches except current
-$ git b --sort=committerdate
-    | egrep -v "\*"
-    | egrep "cr/"
-    | head -3
-    | xargs git b -d
+# hide and unhide are aliases
+$ git hide
+$ git unhide
+
+# hide modified files and then unhide them
+$ git s | grep ^M | xargs git hide
+$ git hidden | xargs git unhide
 
 # open files with space in them
 $ git ls-files "<sproc>"
@@ -32,13 +36,21 @@ $ git ls-files *<sproc>*
 $ git ls-files -z *<sproc>*
     | xargs -0 o
 
-# files with different statuses
-$ git s | grep ^UU
-$ git s | grep ^M
-$ git s | grep ^R
+# alias lsf wraps paths in quotes to handle spaces
+$ git lsf "<sproc>" | xargs o
 
-# open conflicted files
-$ git s | grep ^UU | cut -c3- | xargs o
+# delete merged branches except few
+$ git b --merged 
+    | egrep -v "(\*|master|pu|maint|next)"
+    | egrep "cr/"
+    | xargs git branch -d
+
+# delete oldest 3 cr/* branches except current
+$ git b --sort=committerdate
+    | egrep -v "\*"
+    | egrep "cr/"
+    | head -3
+    | xargs git b -d
 
 # top 2 items
 $ ... | head -2
@@ -46,3 +58,7 @@ $ ... | head -2
 $ ... | tail -2
 # 2nd line item
 $ ... | sed -n '2 p'
+
+# text tools that support piping
+sed streaming editor
+awk text processing tool
