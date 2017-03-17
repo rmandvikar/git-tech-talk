@@ -3,12 +3,14 @@
 
 # greps in working directory only
 $ git grep "woohoo"
+$ git grep "woohoo" -- *.cs
 
 # greps in entire repo
 git log -G "woohoo"
 
-# grep in log messages only
+# greps in log messages only
 git log --grep "woohoo"
 
 # open csproj files from last commit
 $ git difftool head~ --name-only | grep csproj | xargs o
+# o is shortcut for my texteditor
