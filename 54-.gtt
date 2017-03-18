@@ -26,6 +26,6 @@ $ git log --oneline -1
     
     body is freeform. this can go on and on and on and on and on and on.
 
-# Commits are forever
+# Commits are forever, branches are not.
 # - Try not to make typos in commits
-# - Try not to make mistakes with incorrect ticket numbers
+# - Try not to make mistakes by putting incorrect ticket
