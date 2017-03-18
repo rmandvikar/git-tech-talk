@@ -20,3 +20,6 @@ $ git log --oneline -1
     Merge remote-tracking branch 'origin/really-long-branch-name' into release/next
     
     body is freeform. this can go on and on and on and on and on and on.
+
+# Try not to make typos in commits
+# Try not to make mistakes with incorrect ticket numbers
