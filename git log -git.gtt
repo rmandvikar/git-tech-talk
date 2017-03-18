@@ -1,10 +1,10 @@
 ## git log --gargantuan --intimidating --terrifying
 
 
-# 100+ options
+# log has 100+ options
+# git log man is -git
 
-git log -git
-        -tig
-        -g -i -t
-        -g -t -i
-
+$ git log -git
+          -tig
+          -g -i -t
+          -g -t -i
