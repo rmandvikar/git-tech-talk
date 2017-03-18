@@ -8,3 +8,10 @@
 #             dev
 #
 
+# commits are shown as either of following:
+# o
+# *
+# letters A, B, C ...
+
+# merge commits are shown as:
+# *
