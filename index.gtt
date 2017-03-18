@@ -16,6 +16,6 @@ git difftool head
 
 #                                       working dir
 #  HEAD|          git diff head         |
-#   ---o-------------------s------------u
+#   ---o-----------------staged---------unstaged
 #      | git diff --staged |  git diff  |
 #
