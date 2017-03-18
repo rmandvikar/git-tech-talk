@@ -1,9 +1,9 @@
 ## configs
 
 
-# local
-# global
 # system
+# global
+# local
 
 # edit
 $ git config --local -e &
