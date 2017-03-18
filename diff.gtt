@@ -22,6 +22,8 @@ $ git difftool dev:README.md master:rm.Extensions/Heap.cs
 $ git difftool head~2 head
 # see diff of previous 2 commits combined w/ working dir
 $ git difftool head~2
+# see diff of previous 2 commits combined w/ staged working dir
+$ git difftool head~2 --staged
 
 # char level diff
 $ git diff --color-words=.

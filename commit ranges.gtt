@@ -10,9 +10,10 @@
 # ^2~   2nd parent's 1st parent
 # ^!    no parents (roughly, ^ for parent, ! for no)
 
-# ^!
+# How to see what was added in a commit?
+$ git diff 4a5b6c7~ 4a5b6c7
 $ git diff 4a5b6c7^!
-$ git diff 4a5b6c7~ 4a5b6c7 # does not work for merges
+
 
 # what's new on origin/master
 (master)

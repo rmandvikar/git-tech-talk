@@ -10,16 +10,18 @@ $ git stash apply|pop
 # v2.11+, no need to type stash@{1}
 $ git stash apply|pop 1
 
-#     WIP: stashed commit
-#      *-.   
+#      // this is the stashed commit
+#     
+#      *-.   WIP on dev
 #      |\ \  
 #      | | |
-#      | | * untracked files
+#      | | * untracked files on dev
 #      | |
 #      | |
-#      | * index
+#      | * index on dev
 #      |/
-#      x $ git stash save -u
+#      * (dev)        // point from where `git stash save -u` is ran
+#
 
 # use --index to restore index
 git stash apply 3 --index
