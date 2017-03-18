@@ -14,7 +14,7 @@ git difftool --staged|--cached
 # show both, not added and added to index
 git difftool head
 
-#
+#                                       working dir
 #  HEAD|          git diff head         |
 #   ---o-------------------s------------u
 #      | git diff --staged |  git diff  |
