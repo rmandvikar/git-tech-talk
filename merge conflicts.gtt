@@ -25,10 +25,11 @@ UU a.txt # conflict (Unmerged, Updated)
  D e.txt # deleted
 
 # get current|other branch's copy
-$ git difftool --ours|--theirs a.txt
+$ git difftool --ours|--theirs file.txt
 
 # get current branch's copy
-$ git checkout --ours a.txt
+$ git checkout --ours   file.txt
+               --theirs
 
 # undo merge, even a sucessful merge
 git reset --merge orig_head

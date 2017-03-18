@@ -26,5 +26,5 @@ $ git merge dev --ff
 
 # .gitconfig
 [branch "master"]
-	mergeoptions = --no-ff
+	mergeOptions = --no-ff
 # same for next, dev
