@@ -1,7 +1,7 @@
 ## branch
 
 
-# what branches is my merged into?
+# What branches is my branch merged into?
 $ git fetch
 $ git branch -r --contains origin/branch
 

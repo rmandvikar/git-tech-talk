@@ -10,16 +10,22 @@ $ git log --oneline -1
 
 # Please do not do this:
 
-    subject is
-    54 chars only
+    my subject is more than 54 chars so i decided to break
+    it down in this horrible, terrible, criminal way
     
     body is freeform. this can go on and on and on and on and on and on.
 
-# Auto-generated messages, quoted texts are ok
+$ git log --oneline -1
+8624263 (HEAD -> dev) my subject is more than 54 chars so i decided to break it down in this horrible, terrible, criminal way
 
-    Merge remote-tracking branch 'origin/really-long-branch-name' into release/next
+# There are exceptions:
+# - Auto-generated messages
+# - Quoted text
+
+    Merge remote-tracking branch 'origin/really-long-branch-name' into next
     
     body is freeform. this can go on and on and on and on and on and on.
 
-# Try not to make typos in commits
-# Try not to make mistakes with incorrect ticket numbers
+# Commits are forever
+# - Try not to make typos in commits
+# - Try not to make mistakes with incorrect ticket numbers
