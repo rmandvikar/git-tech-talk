@@ -1,6 +1,13 @@
 # piping
 
 
+# There are more things in git and piping, Horatio,
+# than are dreamt of in your philosophy.
+#                   - echo "WS" \
+#                       | sed 's/WS/R/' \
+#                       | awk '{print $0"M"}'
+#
+
 # files with different statuses
 $ git s | grep ^UU
 $ git s | grep ^M

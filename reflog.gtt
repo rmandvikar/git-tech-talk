@@ -2,6 +2,7 @@
 
 
 # <commit> (refs) HEAD@{<i>} summary of operation
+#     where <commit> is after the operation
 
 # ref log
 $ git reflog -10
