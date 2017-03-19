@@ -6,14 +6,10 @@ git review:
     branch = $1 ?? currentBranch()
     if <branch> == null:
         throw "gerrit requires branch"
-    if !exists(origin/<branch>):
-        gerrit create branch master:<branch>
+    if !gerrit-exists-branch <branch>:
+        gerrit-create-branch master:<branch>
     git push origin head:refs/for/<branch>
 
-
+# this will push to branch hx/1234-topic
 (hx/1234-topic)
 $ git review
-
-(1a2b3c4d)
-$ git review hx/1234-topic
-
