@@ -4,20 +4,16 @@
 #              master
 #   ---o---o---o
 #               \     
-#                A---B topic
+#                A---B---C---D topic
 
 (topic)
-$ git rebase -i master|head~2
-
-#              master
-#   ---o---o---o
-#              |\     
-#              | A---B
-#               \
-#                A'--B' topic
+$ git rebase -i master|head~4
 
 pick 87dce5f A
-pick 83dfe9a B
+pick 93dfe9a B
+pick 63dfe9a C
+pick 24dfe9a D
+
 # Commands:
 # p, pick = use commit
 # r, reword = use commit, but edit the commit message
@@ -27,10 +23,12 @@ pick 83dfe9a B
 # x, exec = run command (the rest of the line) using shell
 # d, drop = remove commit
 
-edit 87dce5f A
-pick 83dfe9a B
+edit A
+pick B
+# remove C D
 
 stopped at 87dce5f... A
+(some changes...)
 $ git add .
 $ git rebase --continue
 
@@ -41,11 +39,18 @@ edit B
 edit D
 
 # change to
-e A
-f B
-e C
+pick A
+fixup C
+pick B
 #edit D
 
 # results in
-message 1 (commits A+B)
-message 2 (commit C)
+X (commits A+C)
+Y (commit B)
+
+#              master
+#   ---o---o---o
+#              |\     
+#              | A---B---C---D
+#               \
+#                X---Y topic
