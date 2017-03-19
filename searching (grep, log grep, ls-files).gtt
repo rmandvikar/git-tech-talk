@@ -14,5 +14,3 @@ git log --grep "woohoo"
 # open csproj files from last commit
 $ git difftool head~ --name-only | grep csproj | xargs o
 # o is shortcut for my texteditor
-
-# only git log -G "woohoo" should find this as it's deleted
