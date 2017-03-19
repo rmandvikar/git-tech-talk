@@ -9,11 +9,11 @@
 # git commit
 $ git c
 
-# git status -s|--short
-$ git s
-
 # git checkout
 $ git co
+
+# git status -s|--short
+$ git s
 
 # log aliases
 # git log --pretty=twoline --graph \
