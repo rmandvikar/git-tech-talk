@@ -1,0 +1,16 @@
+## ancestry (parent) refs
+
+
+# ^     parent by breadth
+# ~     parent by depth
+
+# ^     1st parent (same as ^1)
+# ~     1st parent (same as ~1)
+# ^2    2nd parent
+# ~2    grandparent (1st parent's 1st parent)
+
+# ^!    no parents (roughly, ^ for parent, ! for no)
+
+# How to see a diff of a commit?
+$ git diff 4a5b6c7~ 4a5b6c7
+$ git diff 4a5b6c7^!
