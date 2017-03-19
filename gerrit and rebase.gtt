@@ -1,0 +1,21 @@
+# rebase and gerrit
+
+
+# merge master in to topic
+(topic)
+$ git fetch && git branch -f master master@{u}
+$ git merge master
+# resolve conflicts if any
+# push
+$ git review
+
+# Problems with merge:
+# - Logic in merge commits with conflicts
+
+# rebase topic on master
+(topic)
+$ git fetch && git branch -f master master@{u}
+$ git rebase master
+# resolve conflicts if any
+# push
+$ git review
