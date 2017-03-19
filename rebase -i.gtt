@@ -23,26 +23,31 @@ pick 24dfe9a D
 # x, exec = run command (the rest of the line) using shell
 # d, drop = remove commit
 
+# scenario 1: edit, pick, drop
+
 edit A
 pick B
-# remove C D
+drop C
+drop D
 
 stopped at 87dce5f... A
 (some changes...)
 $ git add .
 $ git rebase --continue
 
-# you can reorder commits
-edit A
-edit C
-edit B
-edit D
+# scenario 2: reorder commits
 
-# change to
+pick A
+pick C
+pick B
+pick D
+
+# scenario 3: pick, fixup, reorder, drop
+
 pick A
 fixup C
 pick B
-#edit D
+#edit D (dropping D by commenting)
 
 # results in
 X (commits A+C)

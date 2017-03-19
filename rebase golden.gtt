@@ -3,17 +3,17 @@
 
 # don't rebase public branches
 
-#              topic
+#              hotfix
 #   ---o---o---o
 #       \       
 #        A---B master (me, others)
 
 # I rebase master
 (master)
-$ git rebase topic
+$ git rebase hotfix
 $ git push -f
 
-#              topic       origin/master
+#              hotfix      origin/master
 #   ---o---o---o---A'---B' master (me)
 #       \                  
 #        A---B master (others)
@@ -23,18 +23,19 @@ $ git push -f
 $ git merge origin/master
 $ git push
 
-#              topic
+#              hotfix
 #   ---o---o---o---A'---B'
 #       \                \  origin/master
 #        A---B------------x master (me, others)
 
-# I merge master
 # Merge is better compared to rebase
+
+# I merge master
 (master)
-$ git merge topic
+$ git merge hotfix
 $ git push
 
-#              topic
+#              hotfix
 #   ---o---o---o  master (others)
 #       \       \  
 #        A---B---x master (me)
