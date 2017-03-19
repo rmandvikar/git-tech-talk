@@ -13,3 +13,10 @@ $ git merge master
 $ git commit
 (master)
 $ git merge topic
+
+(topic)
+git rebase master
+#                  master
+#   ---o---o---o---o
+#       \           \   
+#        A---B---C   A'---B'---C' topic
