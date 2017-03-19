@@ -15,4 +15,6 @@ $ git clean -i
 
 # alias: git undo
 $ git reset --hard && git clean -f
-$ git reset && git checkout . && git clean -f
+
+# to delete dirs also
+$ git undo -d
