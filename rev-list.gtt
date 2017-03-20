@@ -13,5 +13,6 @@ $ git rev-list topic...master --left-right --count
 # get left-right commit
 $ git rev-list topic...master --left-right
 
+# Where did I branched from?
 # alias: git bfrom
 $ git bfrom origin/master origin/next
