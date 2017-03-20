@@ -43,8 +43,11 @@ $ git ls-files *<sproc>*
 $ git ls-files -z *<sproc>*
     | xargs -0 o
 
-# alias lsf wraps paths in quotes to handle spaces
-$ git lsf "<sproc>" | xargs o
+# 'wrap' wraps any paths in quotes to handle spaces
+$ git lsf "<sproc>" | wrap | xargs o
+
+# `wrap` is piping-friendly
+$ o ~/bin/wrap
 
 # delete merged branches except few
 $ git b --merged 
