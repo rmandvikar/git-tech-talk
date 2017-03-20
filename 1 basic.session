@@ -1,16 +1,16 @@
 # SciTE session file
 
 buffer.1.path=D:\RM\git-tech-talk\intro.gtt
-buffer.1.position=130
+buffer.1.position=648
 buffer.1.scroll=4
 buffer.1.current=1
 
 buffer.2.path=D:\RM\git-tech-talk\git log -git.gtt
-buffer.2.position=72
+buffer.2.position=103
 buffer.2.scroll=0
 
 buffer.3.path=D:\RM\git-tech-talk\consoles.gtt
-buffer.3.position=44
+buffer.3.position=62
 buffer.3.scroll=0
 
 buffer.4.path=D:\RM\git-tech-talk\configs.gtt
@@ -18,17 +18,21 @@ buffer.4.position=15
 buffer.4.scroll=0
 
 buffer.5.path=D:\RM\git-tech-talk\aliases.gtt
-buffer.5.position=170
+buffer.5.position=168
 buffer.5.scroll=0
 
 buffer.6.path=D:\RM\git-tech-talk\data structures.gtt
-buffer.6.position=111
+buffer.6.position=69
 buffer.6.scroll=0
 
 buffer.7.path=D:\RM\git-tech-talk\dag.gtt
-buffer.7.position=43
+buffer.7.position=13
 buffer.7.scroll=0
 
-buffer.8.path=D:\RM\git-tech-talk\upstream.gtt
-buffer.8.position=38
+buffer.8.path=D:\RM\git-tech-talk\workings.gtt
+buffer.8.position=161
 buffer.8.scroll=0
+
+buffer.9.path=D:\RM\git-tech-talk\upstream.gtt
+buffer.9.position=38
+buffer.9.scroll=0
