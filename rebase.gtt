@@ -13,28 +13,3 @@ $ git rebase master
 #   ---o---o---o
 #       \       \
 #        A---B   A'---B' topic
-
-
-# push after rebase
-
-#              master
-#   ---o---o---o
-#       \       \
-#        \       A'---B' topic
-#         \ 
-#          A---B origin/topic
-#              
-
-$ git push topic
-rejected   (non-fast-forward)
-do a pull/merge first
-
-$ git push -f
-
-#              master
-#   ---o---o---o
-#       \       \
-#        \       A'---B' topic
-#         \              origin/topic
-#          A---B
-

@@ -1,0 +1,28 @@
+## push after rebase
+
+
+(topic)
+$ git push
+$ git rebase master
+
+#              master
+#   ---o---o---o
+#       \       \
+#        \       A'---B' topic
+#         \ 
+#          A---B topic{-1}
+#                origin/topic
+
+$ git push topic
+rejected   (non-fast-forward)
+do a pull/merge first
+
+$ git push -f
+
+#              master
+#   ---o---o---o
+#       \       \
+#        \       A'---B' topic
+#         \              origin/topic
+#          A---B
+
