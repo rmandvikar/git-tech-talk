@@ -13,8 +13,3 @@
                       |
                       |
                            gerrit
-
-# no force push rights - why?
-# to avoid bypassing reviews
-$ git push -f
-( ! [remote rejected])
