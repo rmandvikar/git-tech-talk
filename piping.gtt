@@ -1,4 +1,4 @@
-# piping
+## piping
 
 
 # There are more things in git and piping, Horatio,
@@ -48,6 +48,9 @@ $ git lsf "<sproc>" | wrap | xargs o
 
 # `wrap` is piping-friendly
 $ o ~/bin/wrap
+
+# open files with "next"
+$ git grep "next" | cut -f1 -d':' | wrap | xargs o
 
 # delete merged branches except few
 $ git b --merged 
