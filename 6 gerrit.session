@@ -1,18 +1,18 @@
 # SciTE session file
 
-buffer.1.path=D:\RM\git-tech-talk\gerrit.gtt
+buffer.1.path=c:\git\git-tech-talk\gerrit.gtt
 buffer.1.position=116
 buffer.1.scroll=0
 buffer.1.current=1
 
-buffer.2.path=D:\RM\git-tech-talk\git review.gtt
+buffer.2.path=c:\git\git-tech-talk\git review.gtt
 buffer.2.position=18
 buffer.2.scroll=0
 
-buffer.3.path=D:\RM\git-tech-talk\gerrit and rebase.gtt
+buffer.3.path=c:\git\git-tech-talk\gerrit and rebase.gtt
 buffer.3.position=24
 buffer.3.scroll=0
 
-buffer.4.path=D:\RM\git-tech-talk\gerrit and push -f.gtt
+buffer.4.path=c:\git\git-tech-talk\gerrit and push -f.gtt
 buffer.4.position=87
 buffer.4.scroll=0
