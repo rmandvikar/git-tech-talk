@@ -1,0 +1,14 @@
+## template dir and git hooks
+
+
+# template for when you init a git repo
+# also works for existing repo
+[init]
+	templateDir = ~/.git-templates
+
+# to apply git hooks to all repos
+[core]
+	hooksPath 	= ~/.git-hooks
+
+# to skip the commit-msg hook
+$ git commit -n
