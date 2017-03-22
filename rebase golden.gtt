@@ -1,6 +1,11 @@
 # golden rule of rebase
 
 
+# I normally don't force push a branch,
+# but when I do, I do master.
+#                - #yolo
+
+
 # don't rebase public branches
 
 #              hotfix
