@@ -7,7 +7,7 @@ $ git branch -r --contains origin/branch
 
 # tracking branch info
 $ git branch -v  # verbose
-$ git branch -vv # extra verbose
+$ git branch -vv # very verbose
 
 # force move a branch
 $ git branch -f <branch> <commit|branch>
