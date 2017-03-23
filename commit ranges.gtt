@@ -23,5 +23,5 @@ $ git log d..e
 # ... in d or in e but not both
 $ git log d...e
 
-# ... in a or b or both
+# ... in d or e or both
 $ git log d e
