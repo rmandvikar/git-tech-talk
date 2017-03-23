@@ -12,7 +12,7 @@ git-tech-talk
     git clone https://github.com/rmandvikar/git-tech-talk.git
     ```
 2. Read.
-   * Load the .session files sequentially using SciTE editor.
+   * Load the .session files sequentially using SciTE editor. If you plan to use SciTE then you need to clone at c:\git\git-tech-talk dir.
    * Or open the pdfs sequentially.
 
 #### Helpful files:
