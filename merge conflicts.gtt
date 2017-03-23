@@ -31,7 +31,7 @@ $ git difftool --ours|--theirs file.txt
 $ git checkout --ours   file.txt
                --theirs
 
-# undo merge, even a sucessful merge
+# undo merge, even a successful merge
 git reset --merge orig_head
 # use again to go back to merge commit
 
