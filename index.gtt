@@ -6,13 +6,13 @@
 # exclude a whole file or a *part* of it
 
 # show not added to index
-git difftool
+$ git difftool
 
 # show added to index
-git difftool --staged|--cached
+$ git difftool --staged|--cached
 
 # show both, not added and added to index
-git difftool head
+$ git difftool head
 
 #                                       working dir
 #  HEAD|          git diff head         |
