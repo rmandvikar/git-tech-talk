@@ -32,7 +32,7 @@ $ git checkout --ours   file.txt
                --theirs
 
 # undo merge, even a successful merge
-git reset --merge orig_head
+$ git reset --merge orig_head
 # use again to go back to merge commit
 
 [alias]
@@ -47,4 +47,4 @@ diff --cc file.txt
 ++resolved change
 
 # this does not work
-git difftool head^!
+$ git difftool head^!
