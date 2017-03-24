@@ -24,4 +24,4 @@ $ git stash apply|pop 1
 #
 
 # use --index to restore index
-git stash apply 3 --index
+$ git stash apply 3 --index
