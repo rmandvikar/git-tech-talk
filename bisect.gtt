@@ -2,10 +2,13 @@
 
 
 $ git bisect start
-$ git bisect good
-$ git bisect bad <commit>
-$ ...
+# head is bad
+$ git bisect bad
+# some commit in past is good
+$ git bisect good <commit>
+(bisecting)
 $ git bisect good|bad
-$ ...
+(bisecting)
+(08b9bd4 is the first bad commit)
+# exit bisect state
 $ git bisect reset
-
