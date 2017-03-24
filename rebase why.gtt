@@ -15,7 +15,7 @@ $ git commit
 $ git merge topic
 
 (topic)
-git rebase master
+$ git rebase master
 #                  master
 #   ---o---o---o---o
 #       \           \   
