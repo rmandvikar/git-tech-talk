@@ -6,10 +6,10 @@ $ git grep "woohoo"
 $ git grep "woohoo" -- *.cs
 
 # greps in entire repo
-git log -G "woohoo"
+$ git log -G "woohoo"
 
 # greps in log messages only
-git log --grep "woohoo"
+$ git log --grep "woohoo"
 
 # open csproj files from last commit
 $ git difftool head~ --name-only | grep csproj | xargs o
