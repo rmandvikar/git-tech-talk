@@ -13,5 +13,4 @@ A   rm.ExtensionsTest/BitSetTest.cs
 M   rm.ExtensionsTest/rm.ExtensionsTest.csproj
 
 # show file names 
-$ git difftool --name-only
-
+$ git difftool head~ --name-only

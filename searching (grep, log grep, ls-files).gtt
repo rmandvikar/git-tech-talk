@@ -3,9 +3,10 @@
 
 # greps in working directory only
 $ git grep "woohoo"
-$ git grep "woohoo" -- *.cs
+$ git grep -i "woohoo"        # ignore case
+$ git grep "woohoo" -- *.gtt  # in .gtt files only
 
-# greps in entire repo
+# greps in entire repo (slow)
 $ git log -G "woohoo"
 
 # greps in log messages only
@@ -14,3 +15,7 @@ $ git log --grep "woohoo"
 # open csproj files from last commit
 $ git difftool head~ --name-only | grep csproj | xargs o
 # o is shortcut for my texteditor
+
+# search in all branches (not just current)
+$ git branch -a -v --no-abbrev | awk -F' *' '{print $3}' 
+    | xargs git grep "string/regexp"
