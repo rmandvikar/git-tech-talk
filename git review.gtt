@@ -1,6 +1,10 @@
 ## git review
 
 
+# this will push to branch rm/1234-topic
+(rm/1234-topic)
+$ git review
+
 # push to gerrit for code review
 git review:
     branch = $1 ?? currentBranch()
@@ -9,7 +13,3 @@ git review:
     if !gerrit-exists-branch <branch>:
         gerrit-create-branch master:<branch>
     git push origin head:refs/for/<branch>
-
-# this will push to branch hx/1234-topic
-(hx/1234-topic)
-$ git review
