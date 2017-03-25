@@ -9,12 +9,12 @@
 #
 
 # files with different statuses
-$ git s | grep ^UU
-$ git s | grep ^M
-$ git s | grep ^R
+$ git status -s | grep ^UU
+$ git status -s | grep ^M
+$ git status -s | grep ^R
 
 # open conflicted files
-$ git s | grep ^UU | cut -c3- | xargs o
+$ git status -s | grep ^UU | cut -c3- | xargs o
 
 # open files with BitSet in name
 $ git ls-files *BitSet* | xargs o
@@ -28,7 +28,7 @@ $ git hide
 $ git unhide
 
 # hide modified files and then unhide them
-$ git s | grep ^M | xargs git hide
+$ git status -s | grep ^M | xargs git hide
 $ git hidden | xargs git unhide
 
 # open files with space in them
@@ -44,7 +44,7 @@ $ git ls-files -z *<sproc>*
     | xargs -0 o
 
 # 'wrap' wraps any paths in quotes to handle spaces
-$ git lsf "<sproc>" | wrap | xargs o
+$ git ls-files "<sproc>" | wrap | xargs o
 
 # `wrap` is piping-friendly
 $ o ~/bin/wrap
@@ -53,13 +53,13 @@ $ o ~/bin/wrap
 $ git grep "next" | cut -f1 -d':' | wrap | xargs o
 
 # delete merged branches except few
-$ git b --merged 
+$ git branch --merged 
     | egrep -v "(\*|master|pu|maint|next)"
     | egrep "cr/"
     | xargs git branch -d
 
 # delete oldest 3 cr/* branches except current
-$ git b --sort=committerdate
+$ git branch --sort=committerdate
     | egrep -v "\*"
     | egrep "cr/"
     | head -3

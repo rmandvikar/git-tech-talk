@@ -1,6 +1,10 @@
 ## shortlog
 
 
+#
+# The ̶o̶w̶l̶s stats are not what they seem.
+#
+
 # shortlog with summary, sort, email
 $ git shortlog -sne
 
