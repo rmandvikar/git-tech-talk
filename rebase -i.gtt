@@ -1,6 +1,8 @@
 ## rebase -i
 
 
+# Commit often, perfect later.
+
 #              master
 #   ---o---o---o
 #               \     
@@ -9,10 +11,10 @@
 (topic)
 $ git rebase -i master|head~4
 
-pick 87dce5f A
-pick 93dfe9a B
-pick 63dfe9a C
-pick 24dfe9a D
+pick A
+pick B
+pick C
+pick D
 
 # Commands:
 # p, pick = use commit
@@ -30,10 +32,18 @@ pick B
 drop C
 drop D
 
-stopped at 87dce5f... A
+stopped at A... 
 (some changes...)
 $ git add .
 $ git rebase --continue
+
+#              master
+#   ---o---o---o
+#              |\     
+#              | A---B---C---D
+#               \
+#                A'--B' topic
+
 
 # scenario 2: reorder commits
 
@@ -41,6 +51,13 @@ pick A
 pick C
 pick B
 pick D
+
+#              master
+#   ---o---o---o
+#              |\     
+#              | A---B---C---D
+#               \
+#                A'--C'--B'--D' topic
 
 # scenario 3: pick, fixup, reorder, drop
 
@@ -50,12 +67,12 @@ pick B
 #edit D (dropping D by commenting)
 
 # results in
-X (commits A+C)
-Y (commit B)
+AC (commits A+C)
+B  (commit B)
 
 #              master
 #   ---o---o---o
 #              |\     
 #              | A---B---C---D
 #               \
-#                X---Y topic
+#                AC'--B' topic

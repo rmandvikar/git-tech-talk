@@ -1,21 +1,21 @@
 # SciTE session file
 
-buffer.1.path=c:\git\git-tech-talk\rebase why.gtt
-buffer.1.position=190
+buffer.1.path=c:\git\git-tech-talk\rebase.gtt
+buffer.1.position=35
 buffer.1.scroll=0
 buffer.1.current=1
 
-buffer.2.path=c:\git\git-tech-talk\rebase.gtt
-buffer.2.position=14
+buffer.2.path=c:\git\git-tech-talk\rebase why.gtt
+buffer.2.position=190
 buffer.2.scroll=0
 
 buffer.3.path=c:\git\git-tech-talk\rebase -i.gtt
-buffer.3.position=82
-buffer.3.scroll=0
+buffer.3.position=196
+buffer.3.scroll=5
 
 buffer.4.path=c:\git\git-tech-talk\rebase push.gtt
-buffer.4.position=23
-buffer.4.scroll=3
+buffer.4.position=25
+buffer.4.scroll=0
 
 buffer.5.path=c:\git\git-tech-talk\rebase golden.gtt
 buffer.5.position=60

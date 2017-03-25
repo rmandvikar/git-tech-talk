@@ -3,6 +3,7 @@
 
 (topic)
 $ git push
+$ git fetch
 $ git rebase master
 
 #              master
@@ -25,4 +26,3 @@ $ git push -f
 #        \       A'---B' topic
 #         \              origin/topic
 #          A---B
-

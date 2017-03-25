@@ -7,6 +7,7 @@
 #        A---B topic
 
 (topic)
+$ git fetch
 $ git rebase master
 
 #              master

@@ -14,6 +14,9 @@ $ git commit
 (master)
 $ git merge topic
 
+# merge commits do not add value
+# difficult to read history
+
 (topic)
 $ git rebase master
 #                  master

@@ -3,12 +3,13 @@
 
 # I normally don't force push a branch,
 # but when I do, I do master.
-#                - #yolo
+#     - The Most Interesting Rebaser in the World
+#       #yolo
 
 
 # don't rebase public branches
 
-#              hotfix
+#      last    hotfix
 #   ---o---o---o
 #       \       
 #        A---B master (me, others)
@@ -41,9 +42,9 @@ $ git merge hotfix
 $ git push
 
 #              hotfix
-#   ---o---o---o  master (others)
+#   ---o---o---o  
 #       \       \  
-#        A---B---x master (me)
+#        A---B---x master (me, others)
 #                  origin/master
 
 # Others can fast-forward master now
