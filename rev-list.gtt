@@ -15,4 +15,4 @@ $ git rev-list topic...master --left-right
 
 # Where did I branched from?
 # alias: git bfrom
-$ git bfrom origin/master origin/next
+$ git bfrom master@{u} next@{u}

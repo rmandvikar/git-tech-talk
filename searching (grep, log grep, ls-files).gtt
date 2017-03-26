@@ -12,10 +12,6 @@ $ git log -G "woohoo"
 # greps in log messages only
 $ git log --grep "woohoo"
 
-# open csproj files from last commit
-$ git difftool head~ --name-only | grep csproj | xargs o
-# o is shortcut for my texteditor
-
-# search in all branches (not just current)
-$ git branch -a -v --no-abbrev | awk -F' *' '{print $3}' 
-    | xargs git grep "string/regexp"
+# greps in tip of all branches (not just current)
+$ git branch -a -v | awk -F' *' '{print $2}' \
+    | xargs git grep "woohoo"

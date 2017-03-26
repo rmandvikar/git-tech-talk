@@ -5,14 +5,14 @@
 # also works for existing repo
 # .gitconfig
 [init]
-	templateDir = ~/.git-templates
+    templateDir = ~/.git-templates
 
 # copy contents of template dir to /.git/ dir
 $ git init
 
 # to apply git hooks to all repos
 [core]
-	hooksPath = ~/.git-hooks
+    hooksPath = ~/.git-hooks
 
 # to skip the commit-msg hook
 $ git commit -n
