@@ -9,7 +9,7 @@ fatal: multiple branches matched
   master
   dev
 
-# co to branch
+# fuzzy checkout to branch
 $ git coe z
 Switched to branch 'temp/lazy'
 

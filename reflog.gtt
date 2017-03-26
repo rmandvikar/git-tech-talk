@@ -5,7 +5,7 @@
 #     where <commit> is after the operation
 
 # ref log
-$ git reflog -10
+$ git reflog -3
 
 # 87dce5f (HEAD -> dev, master) HEAD@{0}: reset: moving to master
 # 0733641 HEAD@{1}: rebase -i (finish): returning to refs/heads/dev

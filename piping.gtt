@@ -9,12 +9,11 @@
 #
 
 # files with different statuses
-$ git status -s | grep ^UU
-$ git status -s | grep ^M
-$ git status -s | grep ^R
+$ git status -s | grep "^UU"
+$ git status -s | grep "^ M"
 
 # open conflicted files
-$ git status -s | grep ^UU | cut -c3- | xargs o
+$ git status -s | grep "^UU" | cut -c3- | xargs o
 
 # open files with BitSet in name
 $ git ls-files *BitSet* | xargs o
@@ -50,7 +49,7 @@ $ git ls-files "<sproc>" | wrap | xargs o
 $ o ~/bin/wrap
 
 # open files with "next"
-$ git grep "next" | cut -f1 -d':' | wrap | xargs o
+$ git grep "next" | cut -d':' -f1 | wrap | xargs o
 
 # delete merged branches except few
 $ git branch --merged 
