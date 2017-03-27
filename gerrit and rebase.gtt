@@ -4,8 +4,7 @@
 # merge master in to topic
 (topic)
 $ git fetch
-$ git branch -f master master@{u}
-$ git merge master
+$ git merge origin/master
 # resolve conflicts if any
 # push
 $ git review
@@ -16,8 +15,7 @@ $ git review
 # rebase topic on master
 (topic)
 $ git fetch
-$ git branch -f master master@{u}
-$ git rebase master
+$ git rebase origin/master
 # resolve conflicts if any
 # push
 $ git review
