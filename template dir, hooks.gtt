@@ -7,12 +7,12 @@
 [init]
     templateDir = ~/.git-templates
 
-# copy contents of template dir to /.git/ dir
+# copy contents of template dir to .git/ dir
 $ git init
 
 # to apply git hooks to all repos
 [core]
     hooksPath = ~/.git-hooks
 
-# to skip the commit-msg hook
+# to skip the commit hooks
 $ git commit -n

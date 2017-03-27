@@ -7,8 +7,13 @@ $ git rev-list --all --count
 # get total commit count for master
 $ git rev-list master --count
 
+#   ---o---o---o master
+#           \
+#            o---o topic
+
 # get left-right commit count
 $ git rev-list topic...master --left-right --count
+2   1
 
 # get left-right commit
 $ git rev-list topic...master --left-right
