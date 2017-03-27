@@ -8,9 +8,15 @@
 #                       | awk '{print $0"M"}'
 #
 
+# text tools that support piping
+sed streaming editor
+awk text processing tool
+
 # files with different statuses
 $ git status -s | grep "^UU"
 $ git status -s | grep "^ M"
+
+# o is shortcut for my text editor, scite
 
 # open conflicted files
 $ git status -s | grep "^UU" | cut -c3- | xargs o
@@ -70,7 +76,3 @@ $ ... | head -2
 $ ... | tail -2
 # 2nd line item
 $ ... | sed -n '2 p'
-
-# text tools that support piping
-sed streaming editor
-awk text processing tool
