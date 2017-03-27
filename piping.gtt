@@ -33,7 +33,7 @@ $ git hide
 $ git unhide
 
 # hide modified files and then unhide them
-$ git status -s | grep ^M | xargs git hide
+$ git status -s | grep "^ M" | xargs git hide
 $ git hidden | xargs git unhide
 
 # open files with space in them
