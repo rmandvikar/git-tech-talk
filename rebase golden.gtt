@@ -1,7 +1,7 @@
 # golden rule of rebase
 
 
-# I normally don't force push a branch,
+# I normally don't rebase a branch,
 # but when I do, I do master.
 #     - The Most Interesting Rebaser in the World
 #       #yolo
