@@ -13,5 +13,5 @@ $ git log -G "woohoo"
 $ git log --grep "woohoo"
 
 # greps in tip of all branches (not just current)
-$ git branch -a | egrep -v -- "(->)" \
+$ git branch -a \
     | cut -c3- | xargs git grep "woohoo"
