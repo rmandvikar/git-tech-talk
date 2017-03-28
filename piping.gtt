@@ -51,7 +51,7 @@ $ git ls-files -z *<sproc>*
 # 'wrap' wraps any paths in quotes to handle spaces
 $ git ls-files "<sproc>" | wrap | xargs o
 
-# `wrap` is piping-friendly
+# 'wrap' is piping-friendly
 $ o ~/bin/wrap
 
 # open files with "next"
