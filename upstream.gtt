@@ -23,4 +23,5 @@ $ git fetch
 #           downstream
 
 (master)
-$ git reset --hard master@{u} | origin/master
+$ git reset --hard master@{u}
+                   origin/master
