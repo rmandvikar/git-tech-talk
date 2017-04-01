@@ -18,11 +18,11 @@ $ git difftool master dev -- "dir/file.txt"
 # commit1:file1 / commit2:file2
 $ git difftool dev:README.md master:rm.Extensions/Heap.cs
 
-# see diff of previous 2 commits combined
+# diff of last 2 commits combined w/ head
 $ git difftool head~2 head
-# see diff of previous 2 commits combined w/ working dir
+# diff of last 2 commits combined w/ working dir
 $ git difftool head~2
-# see diff of previous 2 commits combined w/ staged working dir
+# diff of last 2 commits combined w/ staged working dir
 $ git difftool head~2 --staged
 
 # char level diff
