@@ -48,7 +48,7 @@ $ git ls-files *<sproc>*
 $ git ls-files -z *<sproc>*
     | xargs -0 o
 
-# 'wrap' wraps any paths in quotes to handle spaces
+# 'wrap' wraps all paths in quotes to handle spaces
 $ git ls-files "<sproc>" | wrap | xargs o
 
 # 'wrap' is piping-friendly
