@@ -7,23 +7,18 @@ special refs: head, fetch_head
 refs: branch, remote, tag:
     commit
 
-commit:
-    hash
-    message
-    authordate
-    author
-    committerdate
-    committer
-    parent|parents
-    tree
+commit:         => hash
+    (tree, hash)
+    (parent, hash)[]
+    author, name, email, date
+    committer, name, email, date
 
-tree:
-    hash
-    path
-    tree[]
-    blob[]
-    blobpath[]
+tree:           => hash
+    (type, hash, name)[]
+    # where type is blob|tree
 
-blob:
-    hash
+blob:           => hash
     binary
+
+# cat
+$ git cat-file -p <commit>|<tree>|<blob>
