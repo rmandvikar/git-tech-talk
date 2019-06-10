@@ -3,8 +3,9 @@
 
 # greps in working directory only
 $ git grep "woohoo"
-$ git grep -i "woohoo"        # ignore case
-$ git grep "woohoo" -- *.gtt  # in .gtt files only
+$ git grep -i "woohoo"          # ignore case
+$ git grep "woohoo" -- *.gtt    # in .gtt files only
+$ git grep "woohoo" dev master  # in branches dev, master
 
 # greps in entire repo (slow)
 $ git log -G "woohoo"
