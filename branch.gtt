@@ -1,10 +1,6 @@
 ## branch
 
 
-# What branches is my branch merged into?
-$ git fetch
-$ git branch -r --contains origin/branch
-
 # tracking branch info
 $ git branch -v  # verbose
 $ git branch -vv # very verbose

@@ -2,7 +2,7 @@
 
 
 # -u includes untracked files
-$ git stash save -u "comment"
+$ git stash push -u -m "comment"
 
 # pop will remove if no conflicts, apply does not
 $ git stash apply|pop
