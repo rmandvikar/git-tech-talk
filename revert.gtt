@@ -1,0 +1,22 @@
+## revert
+
+
+# revert a commit
+$ git revert <commit>
+
+# revert a merge commit
+$ git revert <merge-commit>
+error: commit <commit> is a merge but no -m option was given.
+fatal: revert failed
+
+#
+#    *   Merge branch 'jwt' into next
+#    |\
+#    | * jwt: Use 'commonName' from 'sub' or 'iss'
+#    | |
+#    * |   Merge branch 'scite' into next
+#    |
+#
+
+# revert a merge commit to 1st parent
+$ git revert -m 1 <merge-commit>

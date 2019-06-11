@@ -32,3 +32,7 @@ buffer.7.scroll=0
 buffer.8.path=c:\git\git-tech-talk\checkout + clean.gtt
 buffer.8.position=105
 buffer.8.scroll=0
+
+buffer.9.path=c:\git\git-tech-talk\revert.gtt
+buffer.9.position=105
+buffer.9.scroll=0
