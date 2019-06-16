@@ -1,0 +1,37 @@
+## rebase -r
+
+
+#   *   3019cac - Tue 28-May-2019 23:05 (3 weeks ago)
+#   |\    Merge branch 'jwt' into next
+#   | * 9261fc7 - Tue 28-May-2019 23:03 (3 weeks ago)
+#   | |   jwt: Use 'commonName' from 'sub' or 'iss'
+#   * |   a5d4754 - Thu 13-Jun-2019 21:04 (2 days ago)
+#   |\ \    Merge branch 'gitconfig' into next
+#   | * | 0bc00d0 - Thu 13-Jun-2019 21:03 (2 days ago)
+#   | |/    gitconfig: Use pull.rebase 'merges'
+#   * |   5b1d6be - Sun 19-May-2019 12:34 (4 weeks ago)
+#   |\ \    Merge branch 'scite' into next
+#   ...
+#   * b4056ac - Sun 19-May-2019 12:19 (4 weeks ago)
+#       Merge branch 'next'
+
+
+(next)
+$ git rebase -ir @~2
+
+
+label onto
+
+# Branch gitconfig
+reset b4056ac # Merge branch 'next'
+pick 0bc00d0 gitconfig: Use pull.rebase 'merges'
+label gitconfig
+
+# Branch jwt
+reset b4056ac # Merge branch 'next'
+pick 9261fc7 jwt: Use 'commonName' from 'sub' or 'iss'
+label jwt
+
+reset onto
+merge -C a5d4754 gitconfig # Merge branch 'gitconfig' into next
+merge -C 3019cac jwt # Merge branch 'jwt' into next
