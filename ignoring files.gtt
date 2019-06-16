@@ -1,0 +1,14 @@
+## ignoring files
+
+
+# gitignore (globbing patterns)
+.gitignore
+
+# to exclude adhoc files
+.git/info/exclude
+
+# to hide/unhide committed files
+# git hide
+$ git update-index --assume-unchanged
+# git unhide
+$ git update-index --no-assume-unchanged
