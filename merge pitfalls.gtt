@@ -1,0 +1,15 @@
+## merge pitfalls
+
+
+(feature)
+$ git merge dev
+# conflicts
+
+# Keep all files while merging with conflicts
+(feature|MERGING)
+$ git status -s
+UU a.txt
+ M b.txt
+ M c.txt
+ M d.txt
+ M e.txt
