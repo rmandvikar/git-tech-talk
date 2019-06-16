@@ -1,0 +1,18 @@
+## push
+
+
+# unconditionally overwrite remote with what I have!
+(next)
+$ git push -f
+#yolo
+
+# overwrite only if I have latest next
+(next)
+$ git push --force-with-lease
+ ! [rejected]        next -> next (stale info)
+
+$ git fetch
+$ git push --force-with-lease
+
+# pushf alias
+$ git pushf

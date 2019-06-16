@@ -18,7 +18,8 @@ $ git push topic
 rejected   (non-fast-forward)
 do a pull/merge first
 
-$ git push -f
+# don't pull
+$ git push --force-with-lease
 
 #              master
 #   ---o---o---o
