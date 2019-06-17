@@ -8,3 +8,7 @@ $ git branch -vv # very verbose
 # force move a branch
 $ git branch -f <branch> <commit|branch>
 $ git branch -f dev origin/dev
+
+# sort branches by committer date asc
+[branch]
+	sort = committerdate
