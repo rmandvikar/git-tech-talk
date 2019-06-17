@@ -1,0 +1,11 @@
+## pull config settings
+
+
+[pull]
+    rebase = true
+[branch]
+    autoSetupRebase = always
+
+# stashes changes, pulls, pops changes
+[rebase]
+    autoStash = true
