@@ -1,0 +1,41 @@
+# merging strategy
+
+
+(master)
+$ git merge hotfix
+
+# how to bring hotfix to dev?
+
+# this causes criss-cross merges,
+# and possibly foxtrot merges
+(dev)
+$ git merge master
+
+#   ---x---x---x
+#     /   /    |
+#              |
+#              |                       dev
+#              |`--------------x---x---X
+#              |              /   /   /
+#              |                     /
+#              |`----------X---------
+#              |          / master
+#              |         /
+#               `---A---B
+#                       hotfix
+
+# preserve first-parent for master in future
+(dev)
+$ git merge hotfix
+
+#                           master
+#   ---x---x---x-------------X
+#     /   /    |            /
+#              |           /
+#              |          /             dev
+#              |`---------------x---x---X
+#              |        /      /   /   /
+#              |       /              /
+#               `-A---B---------------
+#                    hotfix
+
