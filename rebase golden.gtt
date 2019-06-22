@@ -12,39 +12,43 @@
 #      last    hotfix
 #   ---o---o---o
 #       \       
-#        A---B master (me, others)
+#        A---B master
+#             \
+#              o topic
 
 # I rebase master
 (master)
 $ git rebase hotfix
 $ git push -f
 
-#              hotfix      origin/master
-#   ---o---o---o---A'---B' master (me)
+#              hotfix      master (me)
+#   ---o---o---o---A'---B' origin/master
 #       \                  
 #        A---B master (others)
+#             \
+#              o topic
 
-# Others merge origin/master
+# Someone merges topic
 (master)
-$ git merge origin/master
-$ git push
+$ git merge topic
 
-#              hotfix
-#   ---o---o---o---A'---B'
-#       \                \  origin/master
-#        A---B------------x master (me, others)
+#              hotfix        master
+#   ---o---o---o---A'---B'---x
+#       \                   /
+#        A---B             /
+#             \           /
+#              o----------
+#              topic
 
 # Merge is better compared to rebase
-
-# I merge master
 (master)
 $ git merge hotfix
-$ git push
+$ git merge topic
 
-#              hotfix
-#   ---o---o---o  
-#       \       \  
-#        A---B---x master (me, others)
-#                  origin/master
-
-# Others can fast-forward master now
+#                             master
+#   ---o------A---B----x------x
+#       \          \  /      /
+#        o---o--------      /
+#            hotfix  \     /
+#                     o----
+#                     topic
