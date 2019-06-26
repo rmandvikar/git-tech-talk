@@ -12,6 +12,8 @@ commit:         => hash
     (parent, hash)[]
     author, name, email, date
     committer, name, email, date
+    
+    message
 
 tree:           => hash
     (type, hash, name)[]
